@@ -7,8 +7,11 @@ tag @e[type=minecraft:armor_stand, nbt=!{ HandItems: [ { Count: 1b } ] }, tag=mo
 # Update move elapsed
 scoreboard players add @e[tag=move] fc_move_elapsed 1
 
+# Set as moved every 30 ticks
+scoreboard players set @e[tag=move, scores={ fc_move_elapsed=30.. }] fc_moved 1
+
 # Move forward
-execute at @e[tag=move, scores={ fc_move_elapsed=30.. }] as @e[tag=move, scores={ fc_move_elapsed=30.. }] run teleport ^0 ^0 ^1
+execute at @e[tag=move, scores={ fc_moved=1 }] as @e[tag=move, scores={ fc_moved=1 }] run teleport ^0 ^0 ^1
 
 # Change direction
 # East
@@ -20,11 +23,8 @@ execute at @e[tag=move] as @e[tag=move] if block ~ ~-2 ~ minecraft:spruce_planks
 # North
 execute at @e[tag=move] as @e[tag=move] if block ~ ~-2 ~ minecraft:dark_oak_planks run teleport @s ~ ~ ~ facing ~ ~ ~-1
 
-# Set as moved
-scoreboard players set @e[tag=move, scores={ fc_move_elapsed=30.. }] fc_moved 1
-
 # Reset elapsed
-scoreboard players set @e[tag=move, scores={ fc_move_elapsed=30.. }] fc_move_elapsed 0
+scoreboard players set @e[tag=move, scores={ fc_moved=1 }] fc_move_elapsed 0
 
 function fc:automaton/miner/update
 
