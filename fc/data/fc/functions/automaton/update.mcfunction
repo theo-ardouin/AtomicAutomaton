@@ -14,14 +14,12 @@ scoreboard players set @e[tag=move, scores={ fc_move_elapsed=30.. }] fc_moved 1
 execute at @e[tag=move, scores={ fc_moved=1 }] as @e[tag=move, scores={ fc_moved=1 }] run teleport ^0 ^0 ^1
 
 # Change direction
-# East
-execute at @e[tag=move] as @e[tag=move] if block ~ ~-2 ~ minecraft:oak_planks run teleport @s ~ ~ ~ facing ~1 ~ ~
-# West
-execute at @e[tag=move] as @e[tag=move] if block ~ ~-2 ~ minecraft:birch_planks run teleport @s ~ ~ ~ facing ~-1 ~ ~
-# South
-execute at @e[tag=move] as @e[tag=move] if block ~ ~-2 ~ minecraft:spruce_planks run teleport @s ~ ~ ~ facing ~ ~ ~1
-# North
-execute at @e[tag=move] as @e[tag=move] if block ~ ~-2 ~ minecraft:dark_oak_planks run teleport @s ~ ~ ~ facing ~ ~ ~-1
+# 90
+execute at @e[tag=move, scores={ fc_moved=1 }] as @e[tag=move, scores={ fc_moved=1 }] if block ~ ~-2 ~ minecraft:oak_planks run teleport @s ^ ^ ^ facing ^-1 ^ ^
+# -90
+execute at @e[tag=move, scores={ fc_moved=1 }] as @e[tag=move, scores={ fc_moved=1 }] if block ~ ~-2 ~ minecraft:birch_planks run teleport @s ^ ^ ^ facing ^1 ^ ^
+# 180
+execute at @e[tag=move, scores={ fc_moved=1 }] as @e[tag=move, scores={ fc_moved=1 }] if block ~ ~-2 ~ minecraft:spruce_planks run teleport @s ^ ^ ^ facing ^ ^ ^-1
 
 # Reset elapsed
 scoreboard players set @e[tag=move, scores={ fc_moved=1 }] fc_move_elapsed 0
