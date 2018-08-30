@@ -26,7 +26,9 @@ execute at @e[tag=move] as @e[tag=move] if block ~ ~-2 ~ minecraft:dark_oak_plan
 # Reset elapsed
 scoreboard players set @e[tag=move, scores={ fc_moved=1 }] fc_move_elapsed 0
 
+# Call every type of automaton
 function fc:automaton/miner/update
+function fc:automaton/farmer/update
 
 # Reset moved status
 scoreboard players set @e[tag=move, scores={ fc_moved=1 }] fc_moved 0
