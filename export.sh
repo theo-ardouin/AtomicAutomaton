@@ -5,8 +5,10 @@ if [ ! "$1" ]; then
   exit 1
 fi
 
+PACK=`./build_release.sh export`
+
 while [ "$1" ]; do
-  rm -rf "$1/datapacks/fc"
-  cp -r fc/ "$1/datapacks/"
+  rm -rf "$1/datapacks/$PACK"
+  cp "$PACK" "$1/datapacks/"
   shift
 done
