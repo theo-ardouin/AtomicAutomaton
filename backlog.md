@@ -9,4 +9,6 @@
 ## Excavator
 
 ## Lumberjack
-+ Place sapling depending on tree type
++ Acacia
++ Dark oak
++ Jungle

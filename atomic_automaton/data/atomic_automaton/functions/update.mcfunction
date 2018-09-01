@@ -29,6 +29,7 @@ scoreboard players set @e[scores={ aa_moved=1 }] aa_move_elapsed 0
 function atomic_automaton:miner/update
 function atomic_automaton:farmer/update
 function atomic_automaton:excavator/update
+function atomic_automaton:lumberjack/update
 
 # Reset moved status
 scoreboard players set @e[scores={ aa_moved=1 }] aa_moved 0
