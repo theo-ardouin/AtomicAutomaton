@@ -5,9 +5,6 @@
 ## Miner
 
 ## Farmer
-+ Add wheat
-+ Add potatoes
-+ Add carrots
 
 ## Excavator
 
