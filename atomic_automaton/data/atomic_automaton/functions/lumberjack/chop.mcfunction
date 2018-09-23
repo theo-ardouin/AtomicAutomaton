@@ -1,0 +1,10 @@
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^0 ^0 #minecraft:logs run setblock ^0 ^0 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^1 ^0 #minecraft:logs run setblock ^0 ^1 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^2 ^0 #minecraft:logs run setblock ^0 ^2 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^3 ^0 #minecraft:logs run setblock ^0 ^3 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^4 ^0 #minecraft:logs run setblock ^0 ^4 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^5 ^0 #minecraft:logs run setblock ^0 ^5 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^6 ^0 #minecraft:logs run setblock ^0 ^6 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^7 ^0 #minecraft:logs run setblock ^0 ^7 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^8 ^0 #minecraft:logs run setblock ^0 ^8 ^0 minecraft:air destroy
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^0 ^9 ^0 #minecraft:logs run setblock ^0 ^9 ^0 minecraft:air destroy

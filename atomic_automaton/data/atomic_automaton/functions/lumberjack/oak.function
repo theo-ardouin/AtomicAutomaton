@@ -1,2 +1,0 @@
-function atomic_automaton:lumberjack/mine
-setblock ^ ^ ^ minecraft:oak_sapling

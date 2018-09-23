@@ -11,6 +11,7 @@ ZIPNAME="atomic_automaton.$1.zip"
 
 cd "$DIRECTORY"
 
+rm -f "../releases/$ZIPNAME"
 zip -r "../releases/$ZIPNAME" * > /dev/stderr
 
 echo "./releases/$ZIPNAME"

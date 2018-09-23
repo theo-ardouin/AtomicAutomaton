@@ -8,7 +8,7 @@ fi
 PACK=`./build_release.sh export`
 
 while [ "$1" ]; do
-  rm -rf "$1/datapacks/$PACK"
+  rm -f "$1/datapacks/$PACK"
   cp "$PACK" "$1/datapacks/"
   shift
 done

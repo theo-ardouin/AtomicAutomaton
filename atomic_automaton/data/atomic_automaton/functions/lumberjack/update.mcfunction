@@ -6,3 +6,4 @@ tag @e[type=minecraft:armor_stand, nbt=!{ HandItems: [ {id: "minecraft:diamond_a
 execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^ ^ ^ minecraft:oak_log run function atomic_automaton:lumberjack/oak
 execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^ ^ ^ minecraft:birch_log run function atomic_automaton:lumberjack/birch
 execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^ ^ ^ minecraft:spruce_log run function atomic_automaton:lumberjack/spruce
+execute at @e[tag=aa_lumberjack, scores={ aa_moved=1 }] if block ^ ^ ^ minecraft:jungle_log run function atomic_automaton:lumberjack/jungle
