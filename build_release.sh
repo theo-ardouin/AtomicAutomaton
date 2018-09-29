@@ -7,7 +7,7 @@ if [ ! "$1" ]; then
   exit 1
 fi
 
-ZIPNAME="atomic_automaton.$1.zip"
+ZIPNAME="AA_$1.zip"
 
 cd "$DIRECTORY"
 
