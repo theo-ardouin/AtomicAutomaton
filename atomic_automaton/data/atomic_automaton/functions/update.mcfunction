@@ -35,8 +35,8 @@ execute as @e[scores={ aa_moved=1 }] at @s if block ~ ~-2 ~ minecraft:wall_sign{
 execute as @e[scores={ aa_moved=1 }] at @s if block ~ ~-2 ~ minecraft:sign{ Text1: "{\"text\":\"DOWN\"}" } run teleport @s ^ ^-1 ^
 execute as @e[scores={ aa_moved=1 }] at @s if block ~ ~-2 ~ minecraft:wall_sign{ Text1: "{\"text\":\"DOWN\"}" } run teleport @s ^ ^-1 ^
 # STOP
-# execute as @e[scores={ aa_moved=1 }] at @s if block ~ ~-2 ~ minecraft:sign{ Text1: "{\"text\":\"STOP\"}" } run scoreboard players set @s aa_moved 0
-# execute as @e[scores={ aa_moved=1 }] at @s if block ~ ~-2 ~ minecraft:wall_sign{ Text1: "{\"text\":\"STOP\"}" } run scoreboard players set @s aa_moved 0
+execute as @e[tag=aa_move] at @s if block ~ ~-2 ~ minecraft:sign{ Text1: "{\"text\":\"STOP\"}" } run scoreboard players set @s aa_move_elapsed 0
+execute as @e[tag=aa_move] at @s if block ~ ~-2 ~ minecraft:wall_sign{ Text1: "{\"text\":\"STOP\"}" } run scoreboard players set @s aa_move_elapsed 0
 
 # Reset elapsed
 scoreboard players set @e[scores={ aa_moved=1 }] aa_move_elapsed 0
