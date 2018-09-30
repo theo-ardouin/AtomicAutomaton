@@ -44,6 +44,7 @@ function atomic_automaton:farmer/update
 function atomic_automaton:lumberjack/update
 function atomic_automaton:digger/update
 function atomic_automaton:level/update
+function atomic_automaton:automining/update
 function atomic_automaton:miner/update
 
 # Move forward
