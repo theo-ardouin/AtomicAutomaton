@@ -1,2 +1,2 @@
 function atomic_automaton:lumberjack/chop
-setblock ^ ^ ^ minecraft:jungle_sapling
+setblock ^ ^ ^1 minecraft:jungle_sapling

@@ -1,3 +1,3 @@
 # TODO If bigger spruce tree
 function atomic_automaton:lumberjack/chop
-setblock ^ ^ ^ minecraft:spruce_sapling
+setblock ^ ^ ^1 minecraft:spruce_sapling

@@ -12,12 +12,8 @@ data merge entity @e[type=minecraft:armor_stand, nbt={ Invulnerable: 1b }, tag=!
 # Update move elapsed
 scoreboard players add @e[tag=aa_move] aa_move_elapsed 1
 
-# Set as moved every 30 ticks
-scoreboard players set @e[tag=aa_move, scores={ aa_move_elapsed=30.. }] aa_moved 1
-
-# Move forward
-execute as @e[scores={ aa_moved=1 }] at @s run teleport ^ ^ ^1
-scoreboard players add @e[scores={ aa_moved=1 }] aa_blocks 1
+# Set as moved every 20 ticks
+scoreboard players set @e[tag=aa_move, scores={ aa_move_elapsed=20.. }] aa_moved 1
 
 # RIGHT
 execute as @e[scores={ aa_moved=1 }] at @s if block ~ ~-2 ~ minecraft:sign{ Text1: "{\"text\":\"RIGHT\"}" } run teleport @s ^ ^ ^ facing ^-1 ^ ^
@@ -37,6 +33,8 @@ execute as @e[scores={ aa_moved=1 }] at @s if block ~ ~-2 ~ minecraft:wall_sign{
 # STOP
 execute as @e[tag=aa_move] at @s if block ~ ~-2 ~ minecraft:sign{ Text1: "{\"text\":\"STOP\"}" } run scoreboard players set @s aa_move_elapsed 0
 execute as @e[tag=aa_move] at @s if block ~ ~-2 ~ minecraft:wall_sign{ Text1: "{\"text\":\"STOP\"}" } run scoreboard players set @s aa_move_elapsed 0
+# Bedrock is STOP
+execute as @e[tag=aa_move] at @s if block ^ ^ ^1 minecraft:bedrock run scoreboard players set @s aa_move_elapsed 0
 
 # Reset elapsed
 scoreboard players set @e[scores={ aa_moved=1 }] aa_move_elapsed 0
@@ -44,7 +42,13 @@ scoreboard players set @e[scores={ aa_moved=1 }] aa_move_elapsed 0
 # Call every type of automaton
 function atomic_automaton:farmer/update
 function atomic_automaton:lumberjack/update
+function atomic_automaton:digger/update
+function atomic_automaton:level/update
 function atomic_automaton:miner/update
+
+# Move forward
+execute as @e[scores={ aa_moved=1 }] at @s run teleport ^ ^ ^1
+scoreboard players add @e[scores={ aa_moved=1 }] aa_blocks 1
 
 # Reset moved status
 scoreboard players set @e[scores={ aa_moved=1 }] aa_moved 0
