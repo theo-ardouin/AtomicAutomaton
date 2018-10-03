@@ -11,6 +11,8 @@
     "minecraft:dirt",
     "#minecraft:sand",
     "minecraft:sandstone",
-    "#minecraft:leaves"
+    "#minecraft:leaves",
+    "minecraft:netherrack",
+    "minecraft:end_stone"
   ]
 }
