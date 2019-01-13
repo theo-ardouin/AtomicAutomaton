@@ -1,1 +1,5 @@
 # AtomicAutomaton
+
+## Types
++ miner
++ farmer

@@ -6,13 +6,11 @@
     "minecraft:andesite",
     "minecraft:cobblestone",
     "minecraft:gravel",
-    "minecraft:grass_block",
-    "minecraft:podzol",
-    "minecraft:dirt",
-    "#minecraft:sand",
     "minecraft:sandstone",
-    "#minecraft:leaves",
     "minecraft:netherrack",
-    "minecraft:end_stone"
+    "minecraft:end_stone",
+    "#minecraft:dirt_like",
+    "#minecraft:sand",
+    "#minecraft:leaves"
   ]
 }

@@ -1,5 +1,5 @@
 {
 	"values": [
-		"atomic_automaton:update"
+		"atomic_automaton:tick"
 	]
 }

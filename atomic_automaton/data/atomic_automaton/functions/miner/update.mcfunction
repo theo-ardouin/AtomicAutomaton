@@ -1,2 +1,1 @@
-execute at @e[scores={ aa_moved=1 }] if block ^ ^ ^1 #atomic_automaton:breakable run setblock ^ ^ ^1 minecraft:air destroy
-execute at @e[scores={ aa_moved=1 }] if block ^ ^1 ^1 #atomic_automaton:breakable run setblock ^ ^1 ^1 minecraft:air destroy
+execute if entity @e[type=minecraft:hopper_minecart, distance=..500] as @s at @s run function atomic_automaton:miner/run

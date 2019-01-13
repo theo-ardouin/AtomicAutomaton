@@ -1,13 +1,7 @@
-scoreboard objectives add aa_moved dummy
-scoreboard objectives add aa_move_elapsed dummy
-scoreboard objectives add aa_blocks dummy
-scoreboard objectives add aa_tmp dummy
+scoreboard objectives add move_elapsed dummy
+scoreboard objectives add blocks dummy
 
-function atomic_automaton:farmer/load
-function atomic_automaton:lumberjack/load
-function atomic_automaton:digger/load
-function atomic_automaton:level/load
-function atomic_automaton:automining/load
-function atomic_automaton:miner/load
+# On reload, wait 5 seconds before running everything
+scoreboard players set @e[tag=move] move_elapsed -100
 
-say [AtomicAutomaton] Loaded
+say <AtomicAutomaton> Loaded
