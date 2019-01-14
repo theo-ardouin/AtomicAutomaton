@@ -1,15 +1,16 @@
 teleport ^ ^ ^1
 
-#execute as @s[scores={blocks=100}] run teleport @s ^ ^ ^ facing ^ ^ ^-1
-#execute as @s[scores={blocks=200}] run teleport @s ^ ^ ^ facing ^-1 ^ ^
-#execute as @s[scores={blocks=202}] run teleport @s ^ ^ ^ facing ^-1 ^ ^
-#execute as @s[scores={blocks=202}] run scoreboard players set @s blocks 0
+scoreboard players add @s forward 1
 
-execute as @s[scores={blocks=49}] run teleport @s ^ ^ ^ facing ^-1 ^ ^
-execute as @s[scores={blocks=51}] run teleport @s ^ ^ ^ facing ^-1 ^ ^
-execute as @s[scores={blocks=101}] run teleport @s ^ ^ ^ facing ^1 ^ ^
-execute as @s[scores={blocks=103}] run teleport @s ^ ^ ^ facing ^1 ^ ^
+# Set tmp to forward
+scoreboard players operation @s tmp = @s forward
 
-execute as @s[scores={blocks=103}] run scoreboard players set @s blocks -1
+# If tmp (forward) > count
+scoreboard players operation @s tmp -= @s count
+scoreboard players add @s[scores={tmp=1}] dir 1
+scoreboard players set @s[scores={tmp=1}] forward 0
+execute as @s[scores={tmp=1}] at @s run teleport @s ^ ^ ^ facing ^1 ^ ^
 
-scoreboard players add @s blocks 1
+# If went 2 times right, add 1 to count and reset direction
+scoreboard players add @s[scores={dir=2}] count 1 
+scoreboard players set @s[scores={dir=2}] dir 0
