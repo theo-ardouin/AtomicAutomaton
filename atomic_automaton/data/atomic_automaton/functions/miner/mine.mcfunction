@@ -26,3 +26,4 @@ teleport @e[type=item, nbt={Item: {id: "minecraft:emerald"}}, distance=..2] @e[t
 teleport @e[type=item, nbt={Item: {id: "minecraft:emerald_ore"}}, distance=..2] @e[tag=drop, sort=nearest, limit=1]
 teleport @e[type=item, nbt={Item: {id: "minecraft:diamond"}}, distance=..2] @e[tag=drop, sort=nearest, limit=1]
 teleport @e[type=item, nbt={Item: {id: "minecraft:diamond_ore"}}, distance=..2] @e[tag=drop, sort=nearest, limit=1]
+teleport @e[type=item, nbt={Item: {id: "minecraft:obsidian"}}, distance=..2] @e[tag=drop, sort=nearest, limit=1]

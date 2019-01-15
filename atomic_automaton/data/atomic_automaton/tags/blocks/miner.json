@@ -6,6 +6,7 @@
     "minecraft:redstone_ore",
     "minecraft:lapis_ore",
     "minecraft:emerald_ore",
-    "minecraft:diamond_ore"
+    "minecraft:diamond_ore",
+    "minecraft:obsidian"
   ]
 }
