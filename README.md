@@ -4,7 +4,7 @@ A datapack used to enhance the armor stand.
 
 Once paired with some specific tools, the armor stand will behave as an automaton.
 
-## Miner <a name="miner"></a>
+## Miner
 ### Requirements
 + Diamond pickaxe
 
@@ -13,7 +13,7 @@ Once paired with some specific tools, the armor stand will behave as an automato
 + Moves in a circular pattern
 + Sends mined ores to the nearest [dropper](#dropper)
 
-## Farmer <a name="farmer"></a>
+## Farmer
 ### Requirements
 + Diamond hoe
 
@@ -23,7 +23,7 @@ Once paired with some specific tools, the armor stand will behave as an automato
 + Moves following slabs 1 block below it
 + Sends harvested crops to the nearest [dropper](#dropper)
 
-## Dropper <a name="dropper"></a>
+## Dropper
 ### Requirements
 + Chest
 
