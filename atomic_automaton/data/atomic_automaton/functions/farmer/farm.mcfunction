@@ -21,4 +21,7 @@ execute at @s as @s if block ^ ^ ^1 minecraft:potatoes[age=7] run setblock ^ ^ ^
 execute at @s as @s if block ^ ^ ^1 minecraft:beetroots[age=3] run loot spawn ^ ^ ^ mine ^ ^ ^1 mainhand
 execute at @s as @s if block ^ ^ ^1 minecraft:beetroots[age=3] run setblock ^ ^ ^1 minecraft:beetroots replace
 
+execute at @s as @s if block ^ ^ ^1 minecraft:sweet_berry_bush[age=3] run loot spawn ^ ^ ^ mine ^ ^ ^1 mainhand
+execute at @s as @s if block ^ ^ ^1 minecraft:sweet_berry_bush[age=3] run setblock ^ ^ ^1 minecraft:sweet_berry_bush[age=1] replace
+
 function atomic_automaton:farmer/dropper
