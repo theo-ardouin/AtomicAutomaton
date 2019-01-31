@@ -1,1 +1,2 @@
-execute if entity @e[tag=drop] as @s at @s run function atomic_automaton:farmer/run
+function atomic_automaton:farmer/farm
+function atomic_automaton:slabs_move

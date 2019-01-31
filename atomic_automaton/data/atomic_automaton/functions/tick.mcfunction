@@ -1,12 +1,10 @@
 # Give arms to armor stands
 data merge entity @e[type=minecraft:armor_stand, nbt={ShowArms: 0b}, limit=1] {ShowArms: 1b}
 
-# Update drop status
-tag @e[type=minecraft:armor_stand, nbt={HandItems: [{id: "minecraft:chest"}]}, tag=!drop] add drop
-tag @e[type=minecraft:armor_stand, nbt=!{HandItems: [{id: "minecraft:chest"}]}, tag=drop] remove drop
-
+function atomic_automaton:dropper/tick
 function atomic_automaton:miner/tick
 function atomic_automaton:farmer/tick
+function atomic_automaton:lumberjack/tick
 
 tag @e[type=minecraft:armor_stand, nbt=!{HandItems: [{Count: 1b}]}, tag=move] remove move
 

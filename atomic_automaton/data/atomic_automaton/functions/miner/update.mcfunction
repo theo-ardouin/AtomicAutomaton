@@ -1,1 +1,2 @@
-execute if entity @e[tag=drop] as @s at @s run function atomic_automaton:miner/run
+function atomic_automaton:miner/mine
+function atomic_automaton:miner/move

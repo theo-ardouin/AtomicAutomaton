@@ -32,6 +32,18 @@ Once paired with some specific tools, the armor stand will behave as an automato
 
 ---
 
+### Lumberjack
+#### Requirements
++ Diamond axe
+
+#### Behavior
++ Harvests logs
++ Replants saplings
++ Moves following slabs 1 block below it
++ Sends harvested logs to the nearest [dropper](#dropper)
+
+---
+
 ### Dropper
 #### Requirements
 + Chest
