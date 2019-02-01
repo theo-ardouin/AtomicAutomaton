@@ -11,6 +11,7 @@ teleport @e[type=item, nbt={Item: {id: "minecraft:wheat"}}, distance=..2] @e[tag
 teleport @e[type=item, nbt={Item: {id: "minecraft:carrot"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
 
 teleport @e[type=item, nbt={Item: {id: "minecraft:potato"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
+teleport @e[type=item, nbt={Item: {id: "minecraft:poisonous_potato"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
 
 teleport @e[type=item, nbt={Item: {id: "minecraft:beetroot"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
 teleport @e[type=item, nbt={Item: {id: "minecraft:beetroot_seeds"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
