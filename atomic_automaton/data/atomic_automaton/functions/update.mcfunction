@@ -1,6 +1,7 @@
 tag @s remove player
 
 # Check if player within 3x3 chunks
+# 1 chunk = 1 blocks
 execute if entity @p[dx=48, dy=128, dz=48] run tag @s add player
 execute if entity @p[dx=48, dy=-128, dz=48] run tag @s add player
 
