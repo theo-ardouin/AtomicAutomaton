@@ -5,4 +5,4 @@ function atomic_automaton:miner/load
 # On reload, wait 10 seconds before running everything
 scoreboard players set @e[tag=move] move_elapsed -200
 
-say <AtomicAutomaton> Loaded v2.4
+say <AtomicAutomaton> Loaded v2.5
