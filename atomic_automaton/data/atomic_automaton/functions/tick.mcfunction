@@ -6,6 +6,7 @@ function atomic_automaton:miner/tick
 function atomic_automaton:farmer/tick
 function atomic_automaton:lumberjack/tick
 
+# Cannot move if no item in hand
 tag @e[type=minecraft:armor_stand, nbt=!{HandItems: [{Count: 1b}]}, tag=move] remove move
 
 # Update armor stand nbt tags

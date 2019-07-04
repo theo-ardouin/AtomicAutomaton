@@ -18,3 +18,8 @@ teleport @e[type=item, nbt={Item: {id: "minecraft:diamond"}}, distance=..2] @e[t
 teleport @e[type=item, nbt={Item: {id: "minecraft:diamond_ore"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
 
 teleport @e[type=item, nbt={Item: {id: "minecraft:obsidian"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
+
+teleport @e[type=item, nbt={Item: {id: "minecraft:rail"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
+teleport @e[type=item, nbt={Item: {id: "minecraft:powered_rail"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
+teleport @e[type=item, nbt={Item: {id: "minecraft:detector_rail"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
+teleport @e[type=item, nbt={Item: {id: "minecraft:activator_rail"}}, distance=..2] @e[tag=dropper, sort=nearest, limit=1]
