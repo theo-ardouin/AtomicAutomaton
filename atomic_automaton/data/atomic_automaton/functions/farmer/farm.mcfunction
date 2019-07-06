@@ -25,4 +25,4 @@ execute at @s as @s if block ^ ^ ^1 minecraft:sweet_berry_bush[age=3] run setblo
 execute at @s as @s if block ^ ^1 ^1 minecraft:cactus run loot spawn ^ ^ ^ mine ^ ^1 ^1 mainhand
 execute at @s as @s if block ^ ^1 ^1 minecraft:cactus run setblock ^ ^1 ^1 minecraft:air replace
 
-function atomic_automaton:farmer/dropper
+function atomic_automaton:farmer/store

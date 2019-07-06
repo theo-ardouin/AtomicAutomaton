@@ -1,7 +1,6 @@
 # Give arms to armor stands
 data merge entity @e[type=minecraft:armor_stand, nbt={ShowArms: 0b}, limit=1] {ShowArms: 1b}
 
-function atomic_automaton:dropper/tick
 function atomic_automaton:miner/tick
 function atomic_automaton:farmer/tick
 function atomic_automaton:lumberjack/tick

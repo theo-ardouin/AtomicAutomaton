@@ -16,7 +16,7 @@ Once paired with some specific tools, the armor stand will behave as an automato
 #### Behavior
 + Mines blocks in front of it
 + Moves in a circular pattern
-+ Sends mined ores to the nearest [dropper](#dropper)
++ Sends mined ores to the nearest armor stand equipped with a wooden pickaxe
 
 ---
 
@@ -28,7 +28,7 @@ Once paired with some specific tools, the armor stand will behave as an automato
 + Harvests crops
 + Replants crops
 + Moves following slabs 1 block below it
-+ Sends harvested crops to the nearest [dropper](#dropper)
++ Sends harvested crops to the nearest armor stand equipped with a wooden hoe
 
 ---
 
@@ -40,13 +40,4 @@ Once paired with some specific tools, the armor stand will behave as an automato
 + Harvests logs
 + Replants saplings
 + Moves following slabs 1 block below it
-+ Sends harvested logs to the nearest [dropper](#dropper)
-
----
-
-### Dropper
-#### Requirements
-+ Chest
-
-#### Behavior
-+ Receives items
++ Sends harvested logs to the nearest armor stand equipped with a wooden axe

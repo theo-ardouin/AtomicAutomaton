@@ -5,4 +5,4 @@ execute at @s as @s unless block ^ ^ ^1 #minecraft:logs if block ^ ^-1 ^ #minecr
 
 execute at @s as @s unless block ^ ^-1 ^ #atomic_automaton:hollow run function atomic_automaton:slabs_move
 
-execute at @s as @s run function atomic_automaton:lumberjack/dropper
+execute at @s as @s run function atomic_automaton:lumberjack/store
