@@ -4,6 +4,7 @@ data merge entity @e[type=minecraft:armor_stand, nbt={ShowArms: 0b}, limit=1] {S
 function atomic_automaton:miner/tick
 function atomic_automaton:farmer/tick
 function atomic_automaton:lumberjack/tick
+function atomic_automaton:leveler/tick
 
 # Cannot move if no item in hand
 tag @e[type=minecraft:armor_stand, nbt=!{HandItems: [{Count: 1b}]}, tag=move] remove move
